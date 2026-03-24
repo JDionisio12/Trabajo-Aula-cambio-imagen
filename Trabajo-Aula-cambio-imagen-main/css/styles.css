@@ -5,6 +5,10 @@
 }
 .menu-principal{
     background-color: rgb(97, 96, 96); 
+    height: 40px;
+    display: flex;
+    align-items: center;
+    
 }
 ul{
     display: flex;
@@ -12,17 +16,24 @@ ul{
     list-style: none;
     gap: 20px;
 }
+li::after{
+    content: " | ";
+}
+li:last-child::after{
+    content: " ";
+}
 a{
     text-decoration: none;
     color: white;
-    
+    margin: 0 20px;
 }
 body{
     background-color: black;
     color: white;
 }
 h2::after{
-    content: url(img.jpeg);
+    padding:20px;
+    background-image:url(img.jpeg);
 }
 img,button {
     border-radius: 20px;
