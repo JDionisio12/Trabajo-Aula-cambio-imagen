@@ -19,10 +19,6 @@ header {
     padding: 20px;
 }
 
-header h1 {
-    margin-bottom: 10px;
-}
-
 /* NAV */
 .menu-principal {
     background-color: rgb(97, 96, 96);
@@ -79,12 +75,18 @@ header h1 {
     margin-bottom: 20px;
 }
 
+/* 🤖 AÑADIDO ANTES DEL H2 */
+.seccion-destacada h2::before {
+    content: "🤖 ";
+}
+
+/* IMAGEN CORREGIDA (ahora sí se verá) */
 .seccion-destacada h2::after {
     content: "";
     display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-image: url("img.jpeg");
+    width: 25px;
+    height: 25px;
+    background-image: url("https://picsum.photos/25"); /* imagen segura */
     background-size: cover;
     margin-left: 10px;
 }
