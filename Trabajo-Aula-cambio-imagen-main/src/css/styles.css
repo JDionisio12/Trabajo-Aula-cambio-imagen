@@ -23,7 +23,7 @@ h1{
     text-transform: uppercase;
 }
 .menu-principal {
-    background-image: url(../img/headerFooter.jpg); 
+    background-image: url(../img/headerFooter.jpeg); 
     background-size: cover;
 }
 ul {
@@ -85,7 +85,7 @@ h2::before {
     content: "👾 ";
 }
 .btn-accion{
-    background-image: url(../img/boton.jpg);
+    background-image: url(../img/boton.jpeg);
     color: aliceblue;
     padding: 5px 10px;
     background-size: cover;
@@ -142,7 +142,7 @@ img, button {
     border-radius: 10px;
 }
 footer {
-    background-image: url(../img/headerFooter.jpg);
+    background-image: url(../img/headerFooter.jpeg);
     background-size: cover;
     color: black;
     text-align: center;
