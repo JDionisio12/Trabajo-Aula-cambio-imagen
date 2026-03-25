@@ -16,14 +16,14 @@ header{
     flex-direction: column;
     justify-content: flex-end;
     row-gap: 10px;
-    background-image: url(../img/imagenFuturo.jpeg);
+    background-image: url(../src/img/imagenFuturo.jpeg);
 }
 h1{
     font-size: 50px;
     text-transform: uppercase;
 }
 .menu-principal {
-    background-image: url(../img/headerFooter.jpeg); 
+    background-image: url(../src/img/headerFooter.jpg); 
     background-size: cover;
 }
 ul {
@@ -85,7 +85,7 @@ h2::before {
     content: "👾 ";
 }
 .btn-accion{
-    background-image: url(../img/boton.jpeg);
+    background-image: url(../src/img/boton.jpg);
     color: aliceblue;
     padding: 5px 10px;
     background-size: cover;
@@ -106,7 +106,7 @@ h2::before {
     display: flex;
     width: 300px;
     height: 300px;
-    background-image: url(../img/imagenFuturo.jpeg);
+    background-image: url(../src/img/imagenFuturo.jpeg);
     background-size: cover;
     border-radius: 80px;
     margin-left: 10px;
@@ -142,7 +142,7 @@ img, button {
     border-radius: 10px;
 }
 footer {
-    background-image: url(../img/headerFooter.jpeg);
+    background-image: url(../src/img/headerFooter.jpg);
     background-size: cover;
     color: black;
     text-align: center;
@@ -158,4 +158,140 @@ footer {
 .redes-sociales a:hover{
     text-decoration: underline;
     color: blue;
+}
+
+/* ==========================================================================
+   MEDIA QUERIES
+   Añade a partir de aquí tus reglas @media para "rescatar" la web.
+   ========================================================================== */
+/*
+
+/*
+=====
+MÓVIL
+===== */
+@media (max-width: 768px){
+
+    body{
+        min-width: auto;
+    }
+
+    header{
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .menu-principal ul{
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 15px;
+        align-items: center;
+    }
+
+    main,
+    aside{
+        float: none;
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .grid-noticias{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .tarjeta-noticia img{
+        width: 100%;
+        height: auto;
+    }
+
+    footer{
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-col{
+        width: 100%;
+        border-right: none;
+        margin-top: 15px;
+    }
+}
+
+/*
+======
+TABLET
+====== */
+@media (min-width: 769px) and (max-width: 1024px){
+
+    body{
+        min-width: auto;
+    }
+
+    header{
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    .menu-principal ul{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    main{
+        width: 65%;
+        margin-left: 20px;
+    }
+
+    aside{
+        width: 30%;
+        margin: 20px;
+    }
+
+    .grid-noticias{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .tarjeta-noticia img{
+        width: 100%;
+        height: auto;
+    }
+
+    footer{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .footer-col{
+        width: 50%;
+        margin-bottom: 20px;
+    }
+}
+
+/*
+==========
+ESCRITORIO
+========== */
+@media (min-width: 1025px){
+
+    body{
+        min-width: auto;
+    }
+
+    .grid-noticias{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    footer{
+        width: 100%;
+        margin: 0 auto;
+    }
 }
